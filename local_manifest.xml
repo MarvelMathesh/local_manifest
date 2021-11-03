@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+        <remote name="m" fetch="https://github.com/MarvelMathesh" />
+        <remote name="s" fetch="https://github.com/sairam1411" />
+	<remote name="pe" fetch="https://github.com/PixelExperience" />
+        
+<!-- land trees -->
+        <project path="device/xiaomi/land" name="device_xiaomi_land" remote="m" revision="bliss" clone-depth="1" />
+        <project path="vendor/xiaomi/land" name="proprietary_vendor_xiaomi_land" remote="m" revision="ppui" clone-depth="1" />
+        <project path="kernel/xiaomi/msm8937" name="kernel_xiaomi_msm8937" remote="s" revision="11.x" clone-depth="1" />
+	        
+<!-- Hals -->
+	<remove-project name="android_hardware_qcom_audio"/>
+	<remove-project name="android_hardware_qcom_display" />
+	<remove-project name="android_hardware_qcom_media" />
+	
+        <project path="hardware/qcom-caf/msm8996/audio" name="hardware_qcom-caf_msm8996-r_audio" remote="pe" revision="eleven" />
+        <project path="hardware/qcom-caf/msm8996/display" name="hardware_qcom-caf_msm8996-r_display" remote="pe" revision="eleven" />
+        <project path="hardware/qcom-caf/msm8996/media" name="hardware_qcom-caf_msm8996-r_media" remote="pe" revision="eleven" />
+
+</manifest>
