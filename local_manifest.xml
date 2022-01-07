@@ -8,7 +8,7 @@
 <!-- land trees -->
         <project path="device/xiaomi/land" name="device_xiaomi_land" remote="m" revision="lineage" clone-depth="1" />
         <project path="vendor/xiaomi/land" name="proprietary_vendor_xiaomi_land" remote="m" revision="A11" clone-depth="1" />
-        <project path="kernel/xiaomi/msm8937" name="MK-4.9-WIP" remote="m" revision="land" clone-depth="1" />
+        <project path="kernel/xiaomi/msm8937" name="kernel_xiaomi_msm8937" remote="s" revision="11.x" clone-depth="1" />
 	        
 <!-- Hals -->
 	<remove-project name="LineageOS/android_hardware_qcom_audio"/>
